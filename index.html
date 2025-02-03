@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad Educativa Fiscal Eloy Alfaro - Guayaquil</title>
+    <style>
+        :root {
+            --primary: #800020;
+            --secondary: #1a4b8c;
+            --accent: #ffd700;
+            --text: #333;
+            --light: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+        }
+
+        .header {
+            background-color: var(--primary);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--accent);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-01-26%20at%2023.07.19_0c2ab31e.jpg-OAnLYf3BBR9zOrSSZ6k4TtNnOaBvuw.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding-top: 60px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--primary);
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e6c200;
+        }
+
+        .section {
+            padding: 4rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 2rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer {
+            background: var(--primary);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">U.E. Eloy Alfaro</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="oferta-academica.html">Oferta Académica</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Unidad Educativa Fiscal Eloy Alfaro</h1>
+                <p>Formando líderes del mañana en Guayaquil desde 1971</p>
+                <a href="oferta-academica.html" class="btn">Descubre nuestros programas</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">¿Por qué elegirnos?</h2>
+                <div class="features">
+                    <div class="feature">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-01-24%20at%2019.27.42_0f28697b.jpg-xFq4GPPX8xzwMqHNguAOCXHOZXkTfr.jpeg" alt="Laboratorio de Informática">
+                        <h3>Tecnología de Punta</h3>
+                        <p>Laboratorios equipados con la última tecnología para un aprendizaje práctico y actualizado.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-01-24%20at%2019.26.33_3afdea20.jpg-FH2P99PMGweFrIxoSvJMVt3dOZ3Pew.jpeg" alt="Instalaciones Deportivas">
+                        <h3>Instalaciones Deportivas</h3>
+                        <p>Amplias áreas para la práctica de diversos deportes, fomentando un estilo de vida saludable.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-01-26%20at%2020.57.22_ef842fe0.jpg-Gv8FVVy91utkVYMDLpT0OSR76vzUkJ.jpeg" alt="Docentes Calificados">                        <h3>Docentes Calificados</h3>
+                        <p>Nuestro equipo de profesionales está comprometido con la excelencia educativa y el desarrollo integral de los estudiantes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Unidad Educativa Fiscal Eloy Alfaro - Guayaquil, Ecuador</p>
+        </div>
+    </footer>
+</body>
+</html>
