@@ -5,7 +5,7 @@ export function initContactForm() {
             e.preventDefault();
             
             const formData = new FormData(form);
-            fetch('https://formsubmit.co/estudiantedanilolopez@gmail.com', {
+            fetch('https://formsubmit.co/Alfaroeloy580@gmail.com', {
                 method: 'POST',
                 body: formData
             })
