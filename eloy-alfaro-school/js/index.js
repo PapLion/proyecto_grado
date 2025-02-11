@@ -1,4 +1,3 @@
-// Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault()
@@ -8,7 +7,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   })
 })
 
-// Header scroll effect
 const header = document.querySelector(".header")
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
@@ -18,7 +16,6 @@ window.addEventListener("scroll", () => {
   }
 })
 
-// Intersection Observer for fade-in effect
 const observerOptions = {
   root: null,
   rootMargin: "0px",
@@ -37,12 +34,10 @@ document.querySelectorAll(".feature").forEach((feature) => {
   observer.observe(feature)
 })
 
-// Add 'in-view' class for animation
 document.querySelectorAll(".feature").forEach((feature) => {
   feature.classList.add("in-view")
 })
 
-// Mobile menu toggle
 const menuToggle = document.createElement("button")
 menuToggle.classList.add("menu-toggle")
 menuToggle.innerHTML = "☰"
@@ -56,7 +51,6 @@ menuToggle.addEventListener("click", () => {
   menuToggle.innerHTML = header.classList.contains("active") ? "✕" : "☰"
 })
 
-// Close menu when a link is clicked
 navLinks.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
     header.classList.remove("active")
@@ -65,7 +59,6 @@ navLinks.querySelectorAll("a").forEach((link) => {
   })
 })
 
-// Adjust header visibility on resize
 window.addEventListener("resize", () => {
   if (window.innerWidth > 1024) {
     header.classList.remove("active")

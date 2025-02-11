@@ -12,7 +12,7 @@ export function initContactForm() {
             .then(response => {
                 if (response.ok) {
                     alert('¡Mensaje enviado con éxito!');
-                    form.reset(); // Clear the form
+                    form.reset();
                 } else {
                     alert('Hubo un error al enviar el mensaje. Por favor, inténtelo de nuevo.');
                 }
