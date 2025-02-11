@@ -1,4 +1,3 @@
-import './style.css'
 import { initContactForm } from './js/contact.js'
 
 document.addEventListener('DOMContentLoaded', () => {
